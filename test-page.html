@@ -9,6 +9,7 @@
     <title>Test Page</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
     <style>
+        @font-face { font-family: "Latin Modern"; src: url('latinmodern-math.otf'); }
         body {
             hyphens: auto;
             width: 90vw;
@@ -62,12 +63,25 @@
             inlineMath: [['$', '$'], ['\\(', '\\)']]
         },
         chtml: {
-            scale: 1.0
+            scale: 1.0,
+            availableFonts: [],
+            preferredFont: null,
+            webFont: "Latin Modern"
         },
         svg: {
-            scale: 1.0
+            scale: 1.0,
+            availableFonts: [],
+            preferredFont: null,
+            webFont: "Latin Modern"
         }
     };
+    // MathJax.Hub.Config({
+    //     "HTML-CSS": {
+    //         availableFonts: [],
+    //         preferredFont: null,
+    //         webFont: "Neo Euler"
+    //     }
+    // });
 </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -85,11 +99,11 @@
 
 A topological space also allows for the distinction between open and closed sets, which in turn permits the definition of the closure, interior, boundary, and exterior of arbitrary sets.
 
-Two topological spaces may be considered equivalent if they are homeomorphic, meaning there is a homeomorphism (a bijective continuous map whose inverse is also continuous) between them.
+Two topological spaces may be considered equivalent if they are homeo&shy;morphic, meaning there is a homeo&shy;morphism (a bijective continuous map whose inverse is also continuous) between them.
         $$
             \operatorname {Alt} \colon {\bigotimes }^{k}T^{*}M\to {\bigotimes }^{k}T^{*}M
         $$
-Topological spaces form a category, called <b>Top</b>, with continuous maps as morphisms. Homeomorphisms are isomorphisms in the category of topological spaces.
+Topological spaces form a category, called <b>Top</b>, with continuous maps as morphisms. Homeo&shy;morphisms are iso&shy;morphisms in the category of topological spaces.
     </p>
     <hr>
 </body>
