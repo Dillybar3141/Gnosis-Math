@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+  <style>
+    body {
+    hyphens: auto;
+    	width: 90vw;
+        max-width: 70ch;
+        padding: 10pt 5% 0pt 5%;
+      font-family: "Computer Modern Serif", serif;
+      text-align: justify;
+        text-justify: inter-word;
+        margin: auto;
+    }
+    a {
+        color: blue;
+    }
+  </style>
+    <script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        chtml: {
+            scale: 0.85
+        },
+        svg: {
+            scale: 0.85
+        }
+    };
+</script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <h1>
+        Integral Domain
+    </h1>
+    <p>
+        An <i>integral domain</i> is a <a>cancellative</a> <a>commutative</a> <a>ring</a>.
+        $$
+            \large \int_a^b f(x)\, dx = F(b) - F(a)
+        $$
+        The main motivation for defining a topological space is to have a space where both continuity and convergence can be defined.
+
+A topological space also allows for the distinction between open and closed sets, which in turn permits the definition of the closure, interior, boundary, and exterior of arbitrary sets.
+
+Two topological spaces may be considered equivalent if they are homeomorphic, meaning there is a homeomorphism (a bijective continuous map whose inverse is also continuous) between them.
+$$
+        \large \operatorname {Alt} \colon {\bigotimes }^{k}T^{*}M\to {\bigotimes }^{k}T^{*}M
+        $$
+Topological spaces form a category, called <b>Top</b>, with continuous maps as morphisms. Homeomorphisms are isomorphisms in the category of topological spaces.
+    </p>
+    <hr>
+</body>
+</html>
