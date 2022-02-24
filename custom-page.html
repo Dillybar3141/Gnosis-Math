@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+            get: (searchParams, prop) => searchParams.get(prop),
+        });
+        document.getElementsByTagName("h1").innerHTML = params.page;
+    </script>
+</head>
+<body>
+    <h1>
+
+    </h1>
+</body>
+</html>
